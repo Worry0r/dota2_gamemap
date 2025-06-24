@@ -1,0 +1,49 @@
+name: dota2_gamemap
+description: A Flutter implementation of a Dota 2 game map viewer for Android devices.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # WebSocket support
+  web_socket_channel: ^2.4.0
+  
+  # State management
+  provider: ^6.1.1
+  
+  # HTTP requests (for testing)
+  http: ^1.1.0
+  
+  # Image handling
+  cached_network_image: ^3.3.0
+  
+  # Local storage
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/7.33.webp
+    - assets/LightRook.webp
+    - assets/minimap_icons/
+  
+#  fonts:
+#    - family: Roboto
+#      fonts:
+#        - asset: fonts/Roboto-Regular.ttf
+#        - asset: fonts/Roboto-Bold.ttf
+#          weight: 700
